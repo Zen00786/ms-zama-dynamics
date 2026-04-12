@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(180deg, #071411, #020807);
+  color: #edf7f1;
+  text-align: center;
+}
+
+/* Container */
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 30px 20px;
+}
+
+/* Logo */
+.logo {
+  width: 130px;
+  margin-top: 20px;
+  filter: drop-shadow(0 5px 10px rgba(0,0,0,0.6));
+}
+
+/* Title */
+h1 {
+  margin: 10px 0;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+/* Tagline */
+.tagline {
+  color: #9bb7aa;
+  margin-bottom: 40px;
+  font-size: 14px;
+}
+
+/* Grid */
+.apps {
+  display: grid;
+  gap: 25px;
+}
+
+/* Card */
+.card {
+  background: rgba(16, 39, 32, 0.8);
+  padding: 25px 20px;
+  border-radius: 18px;
+  backdrop-filter: blur(8px);
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+/* Hover effect */
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+}
+
+/* Card title */
+.card h2 {
+  margin-bottom: 10px;
+}
+
+/* Card text */
+.card p {
+  color: #9bb7aa;
+  font-size: 14px;
+}
+
+/* Button */
+.card a {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 16px;
+  background: linear-gradient(135deg, #36d399, #20c997);
+  color: #06281b;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+/* Button hover */
+.card a:hover {
+  transform: scale(1.05);
+}
+
+/* About */
+.about {
+  margin-top: 50px;
+  color: #9bb7aa;
+  font-size: 14px;
+}
+
+/* Contact */
+.contact {
+  margin-top: 25px;
+  font-size: 14px;
+}
+
+.contact a {
+  color: #36d399;
+  text-decoration: none;
+}
+
+/* Desktop grid */
+@media (min-width: 600px) {
+  .apps {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
